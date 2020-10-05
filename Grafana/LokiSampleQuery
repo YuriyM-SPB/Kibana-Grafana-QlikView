@@ -1,0 +1,2 @@
+#filters log files based on a substring (in this case, shows errors that occured)
+{filename="/var/log/tns-app.log"} |= "error"
