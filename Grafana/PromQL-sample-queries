@@ -1,0 +1,3 @@
+sum(rate(tns_request_duration_seconds_count[5m])) by(route)
+
+sum(rate(tns_request_duration_seconds_count[10m])) by(status_code)
