@@ -41,6 +41,12 @@ docker pull docker.elastic.co/kibana/kibana:7.9.2
 
 Если вы оставили порт по умолчанию, то для работы с Grafana нужно ввести в браузер адрес http://localhost:3000/ Здесь можно подключать источники данных, создавать и настраивать дашборды и уведомления, подключать плагины и т.д.
 
+Также Grafana можно установить с помощью Docker:
+
+docker run -d -p 3000:3000 grafana/grafana - последняя версия
+
+docker run -d -p 3000:3000 --name grafana grafana/grafana:<version number> - самостоятельный выбор версии
+
 # QlikView
 Для установки QlikView необходимо зарегистрироваться на сайте https://www.qlik.com/us/
 
