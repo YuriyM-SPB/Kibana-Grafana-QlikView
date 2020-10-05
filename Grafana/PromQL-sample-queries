@@ -1,3 +1,7 @@
+#the query selects time series data stored in Prometheus
+#rate function visualizes the rate of requests per second
+#sum function groups time series by a given parameter
+
 sum(rate(tns_request_duration_seconds_count[5m])) by(route)
 
 sum(rate(tns_request_duration_seconds_count[10m])) by(status_code)
