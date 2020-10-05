@@ -11,7 +11,21 @@ https://www.elastic.co/downloads/kibana
 
 и распаковать их.
 
-Более простой вариант - воспользоваться Docker. Для этого нужно ввести следующие команды в командную строку:
+Далее нужно выполнить следующие действия:
+
+1. В папке elasticsearch\bin запустить файл elasticsearch.bat
+
+2. В PowerShell выполнить команду curl http://localhost:9200/ или Invoke-RestMethod http://localhost:9200
+
+3. В папке logstash\bin создать файл logstash.conf и выполнить команду logstash -f logstash.conf
+
+4. В файле настроек kibana.yml указать порт elasticsearch (по умолчанию 9200)
+
+5. В папке kibana\bin запустить файл kibana.bat
+
+После этого Kibana можно открыть в браузере по адресу https://localhost:5601/
+
+Другой вариант - воспользоваться Docker. Для этого нужно ввести следующие команды в командную строку:
 
 docker pull docker.elastic.co/elasticsearch/elasticsearch:7.9.2
 
