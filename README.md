@@ -1,7 +1,23 @@
 # Kibana-Grafana-QlikView
 
 # Kibana
-Для установки Kibana
+Поскольку Kibana работает только как часть стека ELK, кроме самой Kibana необходимо скачать также Elasticsearch и Logstash. Для этого (если вы пользуетесь ОС Windows) нужно скачать .zip-файлы с соответствующими программами с сайта Elastic:
+
+https://www.elastic.co/downloads/elasticsearch
+
+https://www.elastic.co/downloads/logstash
+
+https://www.elastic.co/downloads/kibana
+
+и распаковать их.
+
+Более простой вариант - воспользоваться Docker. Для этого нужно ввести следующие команды в командную строку:
+
+docker pull docker.elastic.co/elasticsearch/elasticsearch:7.9.2
+
+docker pull docker.elastic.co/logstash/logstash:7.9.2
+
+docker pull docker.elastic.co/kibana/kibana:7.9.2
 
 # Grafana
 Для того, чтобы установить программу Grafana, необходимо скачать программу установки с официального сайта. Для этого нужно перейти по адресу https://grafana.com/grafana/download и выбрать подходящую платформу. Для Windows можно либо скачать сам инсталлятор, либо .zip-файл с файлами программы.
