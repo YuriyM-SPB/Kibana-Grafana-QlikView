@@ -1,0 +1,22 @@
+SampleData:
+LOAD * Inline
+[Value
+-1
+0
+1];
+
+Results:
+Load *, 
+cos(Value),
+acos(Value),
+sin(Value),
+asin(Value),
+tan(Value),
+atan(Value),
+atan2(Value, Value),
+cosh(Value),
+sinh(Value),
+tanh(Value)
+RESIDENT SampleData;
+
+Drop Table SampleData;
